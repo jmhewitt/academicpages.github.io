@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
+{% include page__hero.html %}
+{% endif %}
+
+{% if page.url != "/" and site.breadcrumbs %}
+{% unless paginator %}
+{% include breadcrumbs.html %}
+{% endunless %}
+{% endif %}
+
+<div id="main" role="main">
+	{% include sidebar.html %}
+	<div class="archive">
+		{% unless page.header.overlay_color or page.header.overlay_image %}
+		<h1 class="page__title">{{ page.title }}</h1>
+		{% endunless %}
+		
+		{% assign postsByYear = site.publications | group_by_exp: 'post', 'post.date | date: "%Y"' %}
+		<ol>
+		{% for year in postsByYear reversed %}
+		<section id="{{ year.name }}" class="taxonomy__section">
+			<h2 class="archive__subtitle">{{ year.name }}</h2>
+			<div class="entries-{{ page.entries_layout | default: 'list' }}">
+				{% for post in year.items %}
+				<li>{{ post.citation }} <a href="{{ post.url }}" style="color:#52adc8">(more)</a></li>
+				{% endfor %}
+			</div>
+		</section>
+		{% endfor %}
+		</ol>
+		{{ content }}
+	</div>
+</div>

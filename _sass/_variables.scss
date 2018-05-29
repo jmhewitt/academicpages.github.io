@@ -6,7 +6,7 @@
    Typography
    ========================================================================== */
 
-$doc-font-size              : 16;
+$doc-font-size              : 32px;
 
 /* paragraph indention */
 $paragraph-indent           : false; // true, false (default)
@@ -14,8 +14,11 @@ $indent-var                 : 1.3em;
 
 /* system typefaces */
 $serif                      : Georgia, Times, serif;
-$sans-serif                 : -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+//$sans-serif                 : -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+$sans-serif                 : "Helvetica Neue", Helvetica,Arial,sans-serif;
 $monospace                  : Monaco, Consolas, "Lucida Console", monospace;
+$font-weight                : 300;
+$font-weight-light          : 150;
 
 /* sans serif typefaces */
 $sans-serif-narrow          : $sans-serif;
@@ -47,7 +50,7 @@ $type-size-8                : 0.625em;  // ~10px
    Colors
    ========================================================================== */
 
-$gray                       : #7a8288;
+$gray                       : #222;
 $dark-gray                  : mix(#000, $gray, 40%);
 $darker-gray                : mix(#000, $gray, 60%);
 $light-gray                 : mix(#fff, $gray, 50%);
@@ -57,7 +60,7 @@ $body-color                 : #fff;
 $background-color           : #fff;
 $code-background-color      : #fafafa;
 $code-background-color-dark : $light-gray;
-$text-color                 : $dark-gray;
+$text-color                 : #666;
 $border-color               : $lighter-gray;
 
 $primary-color              : #7a8288;

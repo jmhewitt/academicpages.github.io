@@ -1,0 +1,11 @@
+---
+title: "Empirical models of annual post-fire erosion on mulched and unmulched hillslopes"
+collection: publications
+permalink: /publication/2018-04-01-hillslopes
+excerpt: ''
+date: 2018-04-01
+venue: 'CATENA'
+paperurl: 'https://www.sciencedirect.com/science/article/pii/S0341816217304319'
+citation: 'Schmeer, S. R., Kampf, S. K., MacDonald, L. H., <strong>Hewitt, J.</strong>, and Wilson, C. (2018). Empirical models of annual post-fire erosion on mulched and unmulched hillslopes. <i>Catena</i>, 163, 276–287.'
+abstract: 'Erosion is one of the primary land management concerns following wildfire. This study examines controls on post-fire hillslope-scale erosion for the 2012 High Park Fire in northern Colorado, develops simple empirical models for predicting post-fire sediment yields, and evaluates model performance on several nearby fires. From 2013 to 2015 we collected ground cover, rainfall, topographic, and sediment yield measurements from 29 convergent hillslopes; eight of these hillslopes had varying amounts of mulch applied to reduce erosion. From these data we examined correlations between annual sediment yield and three categories of predictor variables (ground cover, precipitation, and topography). Percent bare soil was the single largest control on sediment yield, followed by rainfall variables. Sediment yield generally decreased with flow path length, but the correlation was weak. The empirical models each predicted sediment yield with three variables: percent bare soil, one precipitation variable, and one topographic variable. The models had similar accuracy for the High Park Fire using varying combinations of precipitation and topographic variables (Nash-Sutcliffe coefficients 0.70–0.84). An empirical model predicting annual sediment yields as a function of percent bare soil, June–October precipitation, and the maximum flow path length had variable performance when applied to other fires in the same region, with predictions ranging from poor to good for individual fires and Nash-Sutcliffe coefficients of 0.26–0.32 for all fires combined. These tests show some promise for applying the empirical model to fires in the study region, but further model testing is needed to determine the range of conditions under which the model can be applied.'
+---

@@ -177,7 +177,7 @@ input[type="hidden"] {
 .radio,
 .checkbox {
   padding-left: 18px;
-  font-weight: normal;
+  font-weight: $font-weight-light;
 }
 
 .radio input[type="radio"],

@@ -7,7 +7,9 @@ body {
   padding: 0;
   color: $text-color;
   font-family: $global-font-family;
-  line-height: 1.5;
+  line-height: 1.7;
+  font-weight: $font-weight;
+  text-rendering: optimizeLegibility;
 
   &.overflow--hidden {
     /* when primary navigation is visible, the content in the background won't scroll */
@@ -16,10 +18,16 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  color: #222;
   margin: 2em 0 0.5em;
-  line-height: 1.2;
+  line-height: 1.4em;
   font-family: $header-font-family;
-  font-weight: bold;
+  font-weight: $font-weight;
+  font-family: $sans-serif-narrow;
+}
+
+h2, h3, h4, h5, h6 {
+  margin-bottom: 0;
 }
 
 h1 {
