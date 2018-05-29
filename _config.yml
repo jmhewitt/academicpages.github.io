@@ -11,7 +11,7 @@ title                    : "Joshua Hewitt"
 title_separator          : "-"
 name                     : &name "Josh Hewitt"
 description              : &description ""
-url                      : https://github.com/jmhewitt/jmhewitt.github.io # http://localhost:4000
+url                      : https://jmhewitt.github.io # http://localhost:4000
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "jmhewitt/jmhewitt.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
