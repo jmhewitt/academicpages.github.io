@@ -1,4 +1,4 @@
-/* ==========================================================================
+  /* ==========================================================================
    NAVIGATION
    ========================================================================== */
 
@@ -369,10 +369,14 @@
    Table of contents navigation
    ========================================================================== */
 
+.toc ul {
+    margin-left: 1em;
+    font-size: $type-size-6;
+}
+
 .toc {
   font-family: $sans-serif-narrow;
   color: $gray;
-  text-transform: uppercase;
   letter-spacing: 1px;
   background-color: #fff;
   border: 1px solid $border-color;
