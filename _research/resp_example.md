@@ -12,7 +12,7 @@ At a glance
 -   Demonstrate the `telefit` package's implementation of the [RESP model](https://arxiv.org/abs/1612.06303){:target="\_blank"}.
 -   Reproduce figures and tables in the article linked above.
 -   Download the code as a [script file](../files/resp/resp_example.R).
--   Download the [data (resp\_coex.RData)](https://figshare.com/s/9dc8c814353578d2460c){:target="\_blank"}.
+-   Download the [data (resp\_coex.RData)](https://figshare.com/s/f009bccc11537f46a4dc){:target="\_blank"}.
 
 Introduction
 ============
@@ -45,7 +45,7 @@ if (!require("telefit")) devtools::install_github('jmhewitt/telefit')
 Data
 ====
 
-Load the example data [resp\_coex.RData](https://figshare.com/s/9dc8c814353578d2460c){:target="\_blank"} in an R session. The `dat` object contains the response variable
+Load the example data [resp\_coex.RData](https://figshare.com/s/f009bccc11537f46a4dc){:target="\_blank"} in an R session. The `dat` object contains the response variable
 (precipitation) and covariates. Other objects contain settings and sample model output. The `dat.test` and `dat.train` objects are associated with `fcst.test` and `fit.train`, which are used later to illustrate posterior predictions.
 
 ``` r
@@ -81,7 +81,7 @@ Modeling
 Fit the RESP model
 ------------------
 
-The RESP model may take several hours to fit because it is a hierarchical Bayesian spatial model. The file [resp\_coex.RData](https://figshare.com/s/9dc8c814353578d2460c){:target="\_blank"} contains sample (sub)model output `fit`, `fit.local`, `fit.remote` if you want to skip this step.
+The RESP model may take several hours to fit because it is a hierarchical Bayesian spatial model. The file [resp\_coex.RData](https://figshare.com/s/f009bccc11537f46a4dc){:target="\_blank"} contains sample (sub)model output `fit`, `fit.local`, `fit.remote` if you want to skip this step.
 
 ``` r
 # sampler parameters (Note: cov.r "nugget" is not currently estimated)
@@ -118,7 +118,7 @@ rm(ret)
 ```
 
 The `telefit` package saves posterior samples of the RESP model's mean and
-covariance parameters. Teleconnection effects are estimated separately, via composition sampling as spatial random effects. The posterior predictive distribution is also sampled via composition. Posterior predictive samples for `fcst`, `fcst.local`, and `fcst.remote` are not included in [resp\_coex.RData](https://figshare.com/s/9dc8c814353578d2460c){:target="\_blank"} to reduce the file's size. However, posterior sampling is relatively quick because it is easily parallelized.
+covariance parameters. Teleconnection effects are estimated separately, via composition sampling as spatial random effects. The posterior predictive distribution is also sampled via composition. Posterior predictive samples for `fcst`, `fcst.local`, and `fcst.remote` are not included in [resp\_coex.RData](https://figshare.com/s/f009bccc11537f46a4dc){:target="\_blank"} to reduce the file's size. However, posterior sampling is relatively quick because it is easily parallelized.
 
 ``` r
 # posterior parameter samples
@@ -312,7 +312,7 @@ resp +
 Model comparison
 ----------------
 
-The [resp\_coex.RData](https://figshare.com/s/9dc8c814353578d2460c){:target="\_blank"} file contains model comparison information in the `errs` object.
+The [resp\_coex.RData](https://figshare.com/s/f009bccc11537f46a4dc){:target="\_blank"} file contains model comparison information in the `errs` object.
 
 ``` r
 # set grouping labels
