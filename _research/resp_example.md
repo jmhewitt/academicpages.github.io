@@ -126,14 +126,14 @@ str(fit$parameters$samples)
 ```
 
     ## List of 8
-    ##  $ beta         : num [1:21000, 1:2] -0.08832 -0.03911 0.00985 -0.07779 -0.01186 ...
-    ##  $ sigmasq_y    : num [1:21000, 1] 0.186 0.178 0.186 0.223 0.215 ...
-    ##  $ sigmasq_r    : num [1:21000, 1] 1.84 1.93 1.93 1.93 1.93 ...
+    ##  $ beta         : num [1:21000, 1:2] -0.00943 -0.00378 -0.00467 -0.01297 0.00962 ...
+    ##  $ sigmasq_y    : num [1:21000, 1] 0.0683 0.0673 0.0702 0.0727 0.0725 ...
+    ##  $ sigmasq_r    : num [1:21000, 1] 1.6 1.58 1.79 1.79 3.32 ...
     ##  $ sigmasq_r_eps: num [1:21000, 1] 0 0 0 0 0 0 0 0 0 0 ...
-    ##  $ sigmasq_eps  : num [1:21000, 1] 0.724 0.682 0.492 0.492 0.436 ...
-    ##  $ rho_y        : num [1:21000, 1] 342 322 322 310 263 ...
-    ##  $ rho_r        : num [1:21000, 1] 186 189 212 212 240 ...
-    ##  $ ll           : num [1:21000, 1] -3058 -3274 -3970 -3164 -3405 ...
+    ##  $ sigmasq_eps  : num [1:21000, 1] 3.51 3.51 3.11 2.99 2.64 ...
+    ##  $ rho_y        : num [1:21000, 1] 73.1 73.1 73.1 73.1 73.1 ...
+    ##  $ rho_r        : num [1:21000, 1] 606 606 606 596 596 ...
+    ##  $ ll           : num [1:21000, 1] 889 900 1100 1164 1377 ...
 
 ``` r
 # estimate teleconnection effects and make predictions
@@ -162,16 +162,16 @@ str(fcst$pred[[1]]$err)
 ```
 
     ## List of 10
-    ##  $ mspe          : num 0.614
-    ##  $ ppl           : num 160
-    ##  $ r2            : num -0.0234
-    ##  $ cor           : num -0.0411
-    ##  $ coverage      : num 0.867
-    ##  $ cat.correct   : num 0.246
-    ##  $ cat.heidke    : num -0.105
-    ##  $ cat.heidke.alt: num -0.131
-    ##  $ crps.cat      : num 0.496
-    ##  $ bss           : num -0.00417
+    ##  $ mspe          : num 0.613
+    ##  $ ppl           : num 211
+    ##  $ r2            : num -0.0136
+    ##  $ cor           : num -0.00967
+    ##  $ coverage      : num 0.954
+    ##  $ cat.correct   : num 0.25
+    ##  $ cat.heidke    : num -0.0592
+    ##  $ cat.heidke.alt: num -0.125
+    ##  $ crps.cat      : num 0.481
+    ##  $ bss           : num -0.00302
 
 ``` r
 # compute VIFs
@@ -180,14 +180,14 @@ vif$beta
 ```
 
     ## (Intercept)           T 
-    ##    1.000000    1.060935
+    ##    1.000000    1.071419
 
 ``` r
 summary(vif$alpha)
 ```
 
     ##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-    ##  0.9588  0.9706  0.9750  0.9767  0.9832  0.9985
+    ##  0.9615  0.9724  0.9776  0.9787  0.9852  0.9979
 
 Plots and output
 ================
@@ -411,13 +411,13 @@ df
 ```
 
     ##                                        Posterior mean          95\\% HPD
-    ## Local effects               $\\beta_0$        $-$0.00     ($-$0.1, 0.09)
-    ##                             $\\beta_T$        $-$0.19 ($-$0.24, $-$0.14)
-    ##                          $\\sigma^2_w$           0.33       (0.31, 0.35)
-    ##                    $\\sigma^2_\\alpha$           4.13       (1.07, 8.22)
-    ## Covariance    $\\sigma^2_\\varepsilon$           0.03       (0.02, 0.03)
-    ##                              $\\rho_w$         178.00         (166, 191)
-    ##                        $\\rho_\\alpha$         483.00         (242, 743)
+    ## Local effects               $\\beta_0$        $-$0.00    ($-$0.14, 0.14)
+    ##                             $\\beta_T$        $-$0.18 ($-$0.24, $-$0.12)
+    ##                          $\\sigma^2_w$           0.55       (0.49, 0.62)
+    ##                    $\\sigma^2_\\alpha$           6.05      (1.04, 14.81)
+    ## Covariance    $\\sigma^2_\\varepsilon$           0.01       (0.01, 0.01)
+    ##                              $\\rho_w$         248.00         (220, 280)
+    ##                        $\\rho_\\alpha$         509.00         (266, 799)
 
 Posterior predictive maps
 -------------------------
