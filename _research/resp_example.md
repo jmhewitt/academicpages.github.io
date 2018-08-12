@@ -17,7 +17,7 @@ At a glance
 Introduction
 ============
 
-We fit the RESP model to average monthly precipitation over Colorado in winter, as described [here](https://arxiv.org/abs/1612.06303){:target="\_blank"}. The R package `telefit` [(hosted on Github)](https://github.com/jmhewitt/telefit){:target="\_blank"} implements the RESP model. Basic use of the `telefit` package is demonstrated below.
+We fit the RESP model to average monthly precipitation over Colorado in winter, as described [here](https://arxiv.org/abs/1612.06303){:target="\_blank"}. The R package `telefit` (hosted on [CRAN](http://CRAN.R-project.org/package=telefit){:target="\_blank"} and [Github](https://github.com/jmhewitt/telefit){:target="\_blank"}) implements the RESP model. Basic use of the `telefit` package is demonstrated below.
 
 You may need to install a few packages before proceeding and you can use the `devtools` package to install `telefit`. The `telefit` package has several dependencies and uses C++; it may take several minutes to install.
 
@@ -38,8 +38,11 @@ if (!require("cowplot")) install.packages("cowplot")
 if (!require("coda")) install.packages("coda")
 
 # RESP model
-if (!require("devtools")) install.packages("devtools")
-if (!require("telefit")) devtools::install_github('jmhewitt/telefit')
+if (!require("telefit")) install.packages("telefit")
+
+# development version of RESP model
+# if (!require("devtools")) install.packages("devtools")
+# if (!require("telefit")) devtools::install_github('jmhewitt/telefit')
 ```
 
 Data

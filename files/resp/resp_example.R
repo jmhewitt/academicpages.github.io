@@ -16,8 +16,11 @@ if (!require("cowplot")) install.packages("cowplot")
 if (!require("coda")) install.packages("coda")
 
 # RESP model
-if (!require("devtools")) install.packages("devtools")
-if (!require("telefit")) devtools::install_github('jmhewitt/telefit')
+if (!require("telefit")) install.packages("telefit")
+
+# development version
+# if (!require("devtools")) install.packages("devtools")
+# if (!require("telefit")) devtools::install_github('jmhewitt/telefit')
 
 ## ----load----------------------------------------------------------------
 load('resp_coex.RData')
