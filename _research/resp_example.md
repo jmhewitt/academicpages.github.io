@@ -505,3 +505,8 @@ plot(dat, type='remote', coords.knots = coords.knots, t = 1982) +
 ```
 
 <img src="resp_example_files/figure-markdown_github/supplement_figure_d3-1.png" style="display: block; margin: auto;" />
+
+Acknowledgements
+================
+
+This material is based upon work supported by the National Science Foundation under Grant Number (AGS--1419558). Any opinions, findings, and conclusions or recommendations expressed in this material are those of the authors and do not necessarily reflect the views of the National Science Foundation.
